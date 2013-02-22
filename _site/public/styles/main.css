@@ -71,7 +71,7 @@ body {
 }
 
 .card .subtag {
-	color:#dedede;
+	color:#aeaeae;
 	font-size:12px;
 	text-align:center;
 	display:block;
@@ -161,22 +161,26 @@ body {
 
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  #header .nav-wrap h1.logo a {
-    background: url('/public/images/logo@2x.png') no-repeat center center;
-    background-size: 131px 32px;
-  }
-  #footer span.copy {
-    background: url('/public/images/footer_logo@2x.png') no-repeat center 110px;
-    background-size: 106px;
-  }
-  .hex-overlay {
-    background: url('/public/images/overlay@2x.png');
-    background-size: 220px 254px;
-  }
-  .landing-hexagons a.hexagon {
-    background: url('/public/images/hexagon@2x.png') no-repeat;
-    background-size: 220px 254px;
-  }
+
+}
+
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+	.card {
+		left: 50%;
+		top: 50%;
+		position: fixed;
+		margin-left: -150px;
+		margin-top: -150px;
+		width: 280px;
+	}
+	.card .social .item {
+		padding-left: 10px;
+	}
+	.card .social .item.github {
+		width: 45px;
+	}
 }
 
 
