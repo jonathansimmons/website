@@ -1,0 +1,8 @@
+name: Jonathan D. Simmons
+description: The personal site of Jonathan D. Simmons
+url: http://jonathandsimmons.com
+markdown: rdiscount
+permalink: pretty
+pygments: true
+auto: true
+future: true

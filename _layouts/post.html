@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1"> -->
+    <link href="/public/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+
+    <title>
+      Hivemind Creative &mdash; Design, Web, Video, and Consulting from Baton Rouge, Louisiana{% if page.title %} &mdash; {{ page.title }}{% endif %}
+    </title>
+
+    <!-- Meta -->
+    <meta name="description" content="Design, web, video, and consulting from Baton Rouge, Louisiana. We work with clients we believe in, and provide them with materials that will realistically improve their business. Come say hello.">
+    <meta name="keywords" content="hivemind labs, hivemind creative, hivemind, creative hive, mind, labs, web design, web development, website, web, site, video, produciton, graphic design, design, print, baton rouge, louisiana">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/styles/bootstrap.css" type="text/css">
+    <!-- <link rel="stylesheet" href="/public/styles/bootstrap-responsive.css" type="text/css"> -->
+    <link rel="stylesheet" href="/public/styles/main.css" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- JS -->
+    <script src="/public/scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/public/scripts/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/public/scripts/all.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- rss -->
+    <link rel="alternate" type="application/rss+xml"  href="http://hivemind.co/feed/" title="Hivemind Creative — hivemind.co">
+
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <div class="nav-wrap row">
+          <a href="/story" class="link span2">Who We Are</a>
+          <a href="/services" class="link span2">What We Do</a>
+          <h1 class="logo span4"><a href="/">Hivemind Creative &mdash; Baton Rouge, Louisiana</a></h1>
+          <a href="/portfolio" class="link span2">What We've Done</a>
+          <a href="/blog" class="link span2">What We Think</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content container">
+      <h2>Here's what's on our mind.</h2>
+      <h3>A blog curated by our team.</h3>
+
+      <hr>
+
+          <div class="post">
+              <span class="byline">
+                <span class="date">{{ page.date | date: "%b %d"}}</span>
+                <h2 class="title"><a href="{{ post.url }}">{{ page.title }}</a></h2>
+                <span class="author">by {{ page.author }}</span>
+                <div class="clear"></div>
+              </span>
+                {{ content }}
+              <hr>
+          </div> <!-- close:  post -->
+
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <ul class="links span4">
+            <li><a href="/story">Who We Are</a></li>
+            <li><a href="/services">What We Do</a></li>
+            <li><a href="/portfolio">What We've Done</a></li>
+            <li><a href="/blog">What We Think</a></li>
+          </ul>
+
+          <span class="copy align-center span4">
+            <a href="#" class="contact-btn" data-toggle="modal" data-target="#myModal">Contact Us</a>
+            &copy; 2013 Hivemind Creative, LLC &mdash; Baton Rouge, Louisiana
+          </span>
+
+          <ul class="links align-right span4">
+            <li><a href="/story">Our Story</a></li>
+            <li><a href="/services">Our Services</a></li>
+            <li><a href="/portfolio">Our Portfolio</a></li>
+            <li><a href="/blog">Our Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!-- contact modal -->
+  <!-- Modal -->
+  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <form class="form-horizontal" action="http://cherrycreekdrive.com/form_action.php" method="POST">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Contact Us</h3>
+      </div>
+      <div class="modal-body">
+
+        <div class="control-group">
+          <label class="control-label" for="name">Your Name</label>
+          <div class="controls">
+            <input id="name" placeholder="John Smith" name="name">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="email">Your Email</label>
+          <div class="controls">
+            <input type="text" id="email" placeholder="john.smith@gmail.com" name="email">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputPassword">Your Message</label>
+          <div class="controls">
+            <textarea id="message" placeholder="Your Message" name="message"></textarea>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <span class="muted pull-left"><small>Call us at <a href="tel:2252677795">225-267-7795</a> or email us at <a href="mailto:info@hivemind.co">info@hivemind.co</a></small></span>
+        <button class="btn btn-hivemind">Send</button>
+      </div>
+      </form>
+  </div>
+
+
+  <!-- gauges -->
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '511c7d20108d7b128a00001f');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+
+  <!-- google analytics -->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38547743-1']);
+    _gaq.push(['_setDomainName', 'hivemind.co']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+  </body>
+</html>
