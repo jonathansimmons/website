@@ -159,14 +159,8 @@ body {
 	background-position-y:-51px;
 }
 
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-
-}
-
 @media only screen
 and (max-width : 320px) {
-/* Styles */
 	.card {
 		left: 50%;
 		top: 50%;
