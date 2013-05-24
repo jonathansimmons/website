@@ -13,6 +13,7 @@
     <!-- Meta -->
     <meta name="description" content="The personal site of Jonathan D. Simmons. Husband / Father / Developer / Co-Founder">
     <meta name="keywords" content="Jonathan, Jonathan Simmons, Jonathan D Simmons, hivemind labs, hivemind creative, hivemind, baton rouge, louisiana, jonathansimmons, thatsimmonsman">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/public/styles/bootstrap.css" type="text/css">
@@ -34,20 +35,37 @@
   <body>
 
     <div class="container-fluid">
-      {{ content }}
+      <div class="card">
+				<div class="card">
+					<img src="/public/images/headshot.png">
+					<h1 class="name">Jonathan Simmons</h1>
+					<span class="subtag">Husband / Father / Co-Founder / Developer</span>
+					<hr />
+					<div class="social">
+						<a href="http://twitter.com/jonathansimmons" class="twitter item"></a>
+						<a href="http://www.rdio.com/people/JonathanSimmons/" class="rdio item"></a>
+						<a href="http://www.instagram.com/JonathanSimmons/" class="instagram item"></a>
+						<a href="http://www.github.com/JonathanSimmons/" class="github item"></a>
+					</div>
+				</div>
+      </div>
     </div>
-		<script type="text/javascript">
-		  var _gauges = _gauges || [];
-		  (function() {
-		    var t   = document.createElement('script');
-		    t.type  = 'text/javascript';
-		    t.async = true;
-		    t.id    = 'gauges-tracker';
-		    t.setAttribute('data-site-id', '519fa7daf5a1f53b5c000158');
-		    t.src = '//secure.gaug.es/track.js';
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(t, s);
-		  })();
-		</script>
+
+  <!-- gauges -->
+	<script type="text/javascript">
+	  var _gauges = _gauges || [];
+	  (function() {
+	    var t   = document.createElement('script');
+	    t.type  = 'text/javascript';
+	    t.async = true;
+	    t.id    = 'gauges-tracker';
+	    t.setAttribute('data-site-id', '5127a4f4f5a1f5505c000079');
+	    t.src = '//secure.gaug.es/track.js';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(t, s);
+	  })();
+	</script>
+
+
   </body>
 </html>

@@ -1,0 +1,181 @@
+/* Browser Reset via Blueprint ------------------------------- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit;
+	font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+body { line-height: 1.5; }
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+.clear { clear: both; }
+
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+
+
+
+/*  Layout ---------------------------------------------------- */
+
+body {
+  background: url('/public/images/background.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.card {
+	width: 320px;
+	height: 280px;
+	left: 50%;
+	top: 50%;
+	position: fixed;
+	margin-left: -170px;
+	margin-top: -150px;
+	background: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-transition: background 0.5s ease-in-out;
+	-moz-transition: background 0.5s ease-in-out;
+	-o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
+}
+
+.card img {
+	margin: 0 auto;
+	display: block;
+}
+
+.card .name {
+	text-align: center;
+	font-size: 29px;
+	color: #555;
+	-webkit-transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out;
+}
+
+.card .subtag {
+	color:#aeaeae;
+	font-size:12px;
+	text-align:center;
+	display:block;
+	-webkit-transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out;
+}
+
+
+.card.twitter {
+	background:#00aced;
+}
+.card.rdio {
+	background:#007dc3;
+}
+.card.instagram {
+	background:#c7b8a3;
+}
+.card.github {
+	background:#222222;
+}
+.card.white .name {
+	color:#ffffff;
+}
+.card.white .subtag {
+	color:#ededed;
+}
+
+
+
+
+
+
+.card .social {
+	margin-top: -5px;
+	margin-left: 17px;
+}
+.card .social .item {
+	display: block;
+	background: url('/public/images/social.png') no-repeat;
+	width: 55px;
+	height: 42px;
+	float: left;
+	-webkit-transition: background-position 0.5s ease-in-out;
+	-moz-transition: background-position 0.5s ease-in-out;
+	-o-transition: background-position 0.5s ease-in-out;
+	transition: background-position 0.5s ease-in-out;
+}
+.card .social .item {
+	padding-left: 22px;
+}
+.card .social:first-child {
+	padding-left:15px;
+}
+.card .social:last-child {
+/*	padding-right:0*/
+}
+.card .social .item.twitter {
+	background-position: 0px 0;
+}
+.card .social .item.twitter:hover {
+	background-position: 0px -102px;
+}
+.card .social .item.rdio {
+	background-position: -80px 0;
+}
+.card .social .item.rdio:hover {
+	background-position: -80px -101px;
+}
+.card .social .item.instagram {
+	background-position: -160px 0;
+}
+.card .social .item.instagram:hover {
+	background-position: -160px -101px;
+}
+.card .social .item.github {
+	width: 35px;
+	background-position: -245px 0;
+}
+.card .social .item.github:hover {
+	background-position: -245px -101px;
+}
+.card .social .item.faded {
+	background-position-y:-51px;
+}
+
+@media only screen
+and (max-width : 320px) {
+	.card {
+		left: 50%;
+		top: 50%;
+		position: fixed;
+		margin-left: -150px;
+		margin-top: -150px;
+		width: 280px;
+	}
+	.card .social .item {
+		padding-left: 10px;
+	}
+	.card .social .item.github {
+		width: 45px;
+	}
+}
+
+
+
