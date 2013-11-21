@@ -4,7 +4,7 @@
 	  {% include head.html %}
   </head>
   <body>
-  	<button class="lines-button arrow arrow-left x visible-xs" type="button" role="button" aria-label="Toggle Navigation">
+  	<button class="lines-button arrow arrow-left visible-xs" type="button" role="button" aria-label="Toggle Navigation">
 		  <span class="lines"></span>
 		</button>
 	  <div id="sidebar">
@@ -24,10 +24,14 @@
 				</div>
 			{% endif %}
 
-			<div id="content">
+			<div id="portfolio">
 				 {{ content }}
 			</div>
-			<div id="modals"></div>
+			<script>
+				$(document).ready(function(){
+					s = skrollr.init();
+				})
+			</script>
 	  </div>
 
     {% include google.html %}

@@ -1,7 +1,8 @@
 name: Jonathan D. Simmons
-description: The personal site of Jonathan D. Simmons
+description: The personal site of Jonathan Simmons, a Ruby on Rails developer based in Baton Rouge, La.
 url: http://jonathandsimmons.com
 markdown: rdiscount
 permalink: pretty
 pygments: true
 future: true
+timezone: America/Chicago
