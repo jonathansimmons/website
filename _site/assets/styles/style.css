@@ -541,6 +541,9 @@ strong {
 	text-align: right
 }
 
+.post {
+	margin-bottom:50px;
+}
 .post-title a {
 	color: #666;
 	font-weight: 300;

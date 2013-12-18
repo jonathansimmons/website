@@ -1,5 +1,5 @@
 ---
-date: 2013-12-16 T13:35:00-05:00
+date: 2013-12-18 T13:35:00-05:00
 layout: post
 title: True Automation
 author: Jonathan Simmons
