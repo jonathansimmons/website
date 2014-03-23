@@ -218,9 +218,11 @@ strong {
 	top: 0;
 	/*left: 0;*/
 	width: 20%;
-	overflow: scroll;
 	box-shadow: -1px -1px 20px -10px #000 inset;
 	z-index: 2;
+	overflow-x: hidden;
+	overflow-y:scroll;
+
 	/*transition: height 0.5s;*/
 }
 
@@ -239,7 +241,7 @@ strong {
 	right: 10px;
 	width: 94%;
 	max-width: 300px;
-	height: 720px;
+	height: 724px;
 	overflow: hidden;
 	opacity: 1;
 	-webkit-transition: opacity .3s ease-out;
@@ -417,6 +419,7 @@ strong {
 }
 
 #sidebar #social {
+	background: #2e2e2e;
 	position: absolute;
 	bottom: 0;
 	list-style: none;
@@ -547,4 +550,11 @@ strong {
 .post-title a {
 	color: #666;
 	font-weight: 300;
+}
+
+
+@media (max-width:320px) {
+	.post-title {
+		font-size:24px;
+	}
 }
