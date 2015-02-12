@@ -1,17 +1,87 @@
 ---
 layout: default
-title: Husband, Father, Developer
-description: "The personal site of Jonathan Simmons, a Ruby on Rails developer based in Baton Rouge, La."
-tags: [Jonathan Simmons, Jonathan, Simmons, Developer, Californian, ruby on rails, rails]
+title: Resume
+description: "The resume of Jonathan Simmons."
+tags: [jonathan, jonathan simmons, ruby, ruby on rails, portfolio, web design, css, javascript]
 image:
-  feature: eat-to-live.jpg
+  one: wantkeeper.jpg
+  two: watchman.jpg
+  three: ycsm.jpg
 ---
+<div id="resume">
+ <h3>Software Developer</h3>
+ <p>I'm a web application developer with an expertise in Ruby on Rails, HTML5, CSS3 and JavaScript. I excel at team management and have a passion for startups and new technologies. I believe design should have a purpose, products should solve problems and the greatest ideas are those born from necessity and collaboration. If you think your staff needs to work in a cubical from 9-5 to be productive, please stop now and read <a href="http://37signals.com/remote/">Remote</a>.</p>
 
-	{% for post in site.posts %}
-		<div class="post">
-			<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <small class="text-muted">{{post.date | date: "%b %d, %Y %I:%M%P"}} - {{post.author}} </small>
-      <hr>
-      {{ post.content }}
+<h3>Specialties</h3>
+<div id="graph">
+	<div class="stat">
+		<div class="value" data-width="90%">HTML5</div>
+	</div>
+	<div class="stat">
+		<div class="value" data-width="85%">CSS3 / SASS</div>
+	</div>
+	<div class="stat">
+		<div class="value" data-width="80%">Ruby on Rails</div>
+	</div>
+	<div class="stat">
+		<div class="value" data-width="75%">JavaScript (jQuery, CoffeeScript)</div>
+	</div>
+		<div class="stat">
+		<div class="value" data-width="75%">PHP</div>
+	</div>
+	<div class="stat">
+		<div class="value" data-width="70%">Adobe Photoshop & Illustrator</div>
+	</div>
+	<div class="stat">
+		<div class="value" data-width="65%">Git</div>
+	</div>
+	<div class="stat">
+		<div class="value" data-width="50%">MySQL / PostgreSQL</div>
+	</div>
+	<div class="baseline">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-4"><span class="text-muted">Beginner</span></div>
+			<div class="col-md-4 col-sm-4 col-xs-4"><span class="text-muted">Intermediate</span></div>
+			<div class="col-md-4 col-sm-4 col-xs-4"><span class="text-muted">Ninja</span></div>
 		</div>
-	{% endfor %}
+	</div>
+</div>
+
+<h3>Experience</h3>
+<div class="experience well well-sm">
+	<h4>Owner / Developer, JSDEV</h4>
+	<div class="clearfix"></div>
+	<small>July 2013 — Present</small>
+	<p>Working as a freelance web application developer primarily utilizing Ruby on Rails, HTML5, CSS3, and JavaScript.</p>
+</div>
+
+<div class="experience well well-sm">
+	<h4>Co-founder / Developer, Hivemind Creative</h4>
+	<div class="clearfix"></div>
+	<small>Dec 2011 — June 2013</small>
+	<p>Applied analytical, creative and professional skills to build websites and web-based applications for clients around the country in industries including government, retail, health care, professional services, and more.</p>
+
+	<strong>Notable Contributions</strong>
+	<ul>
+		<li>Managed the company finances, payroll and assets</li>
+		<li>Client Relations</li>
+	</ul>
+</div>
+
+<div class="experience well well-sm">
+	<h4>Regional Manager</h4>
+	<div class="clearfix"></div>
+	<small>Sep 2007 — Dec 2011</small>
+	<p>Worked as a regional manager of an Apple Authorized Reseller in California and Louisiana. Managed staff at multiple locations in retail sales and computer repair.</p>
+
+	<strong>Notable Contributions</strong>
+	<ul>
+		<li>Store Inventory & Ordering</li>
+		<li>Store Merchandising</li>
+		<li>Managed Technical Department</li>
+		<li>Staff HR</li>
+		<li>Sales Team Training</li>
+		<li>Cash Deposits/Cash</li>
+		<li>Register/POS Training</li>
+	</ul>
+</div>
