@@ -3,6 +3,6 @@ description: The personal site of Jonathan Simmons, a Ruby on Rails developer ba
 url: http://jonathandsimmons.com
 markdown: rdiscount
 permalink: pretty
-pygments: true
+highlighter: true
 future: true
 timezone: America/Chicago
