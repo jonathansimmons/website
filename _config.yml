@@ -17,6 +17,7 @@ plugins:
   - jekyll-postcss
   - jekyll-purgecss
 
+
 # jekyll-seo-tag configuration
 author: "Jonathan Simmons"
 url: "jonathansimmons.dev"
