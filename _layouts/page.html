@@ -1,35 +1,5 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <button class="lines-button arrow arrow-left visible-xs" type="button" role="button" aria-label="Toggle Navigation">
-      <span class="lines"></span>
-    </button>
-    <div id="sidebar" class="visible-xs">
-      {% include sidebar.html %}
-    </div>
-    <div id="wrap" class="full">
-      {% if page.image.feature %}
-        <div id="page-header">
-          <div id="page-image">
-            <img src="/assets/images/{{ page.image.feature }}" alt="{{ page.title }}" itemprop="image" class="{% if page.image.blur %}blur{% endif %}">
-            {% if page.image.credit %}
-              <div class="image-credit">
-                Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
-              </div>
-            {% endif %}
-          </div>
-        </div>
-      {% endif %}
+---
+layout: default
+---
 
-      <div id="content">
-       {{ content }}
-      </div>
-    </div>
-
-
-    {% include google.html %}
-  </body>
-</html>
+{{ content }}
