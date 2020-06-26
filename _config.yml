@@ -3,7 +3,6 @@ description: A starter kit for using Tailwind with Jekyll
 
 plugins:
   - jekyll-feed
-  - jekyll-purgecss
 author: "Jonathan Simmons"
 url: "jonathansimmons.dev"
 title: "Jonathan Simmons"
