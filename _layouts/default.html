@@ -1,25 +1,10 @@
-<head>
+---
+---
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  {% feed_meta %}
-  {% seo %}
-  <meta name="keywords"
-    content="Jonathan, Jonathan Simmons, Jonathan D Simmons, dallas, texas, jonathansimmons, @jonathansimmons, thatsimmonsman, @thatsimmonsman">
-  <link rel="stylesheet" href="/css/site.css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-
-</head>
-<html>
-
-<body>
-  <section class="container mx-auto">
+{% include header.html %}
+<body class="bg-gray-100 dark:bg-black">
+  <main class="container mx-auto flex h-screen w-full">
     {{ content }}
-  </section>
-
-  {% if jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
+  </main>
 </body>
-
-</html>
+{% include footer.html %}

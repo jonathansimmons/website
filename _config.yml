@@ -1,46 +1,25 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: Tailwind Jekyll Starter Kit
+description: A starter kit for using Tailwind with Jekyll
 
-# Build settings
-markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-postcss
   - jekyll-purgecss
-
-
-# jekyll-seo-tag configuration
 author: "Jonathan Simmons"
 url: "jonathansimmons.dev"
 title: "Jonathan Simmons"
 description: "The personal site of Jonathan Simmons. Husband / Father / Product Strategist"
 twitter:
   username: "jonathansimmons"
-  card: ""
 logo: "images/avatar.jpg"
-
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
   - node_modules
-  - yarn.lock
+  - package.json
   - package-lock.json
   - README.md
-  - postcss.config.js
-  - purgecss.config.js
+  - src
+  - tailwind.config.js
   - netlify.toml
-  - bin
-  - .gitignore
